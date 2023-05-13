@@ -1,3 +1,41 @@
+# Tasks to be implemented : 
+
+### Date fns tasks :  
+
+Updated this min/hour/days ago 
+
+Parsing string from date obj 
+
+Parsing date obj from string 
+
+### Antd task: 
+
+Replace normal list with card 
+
+Add slide pane bar to create new task form 
+
+Add avatar in side pane 
+
+### Zustand task: 
+
+Use a login data and make it available every screen using zustand 
+
+### API task: 
+
+Use react query to post, delete and get the data 
+
+Button loading and disabled while posting data 
+
+### Route task: 
+
+Add a 404 not found page 
+
+Add default route logic 
+
+### Yup validation, formik  
+
+Validate the name(must be 8 character), description(must be 50 character) 
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
