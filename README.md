@@ -1,5 +1,7 @@
 # Tasks to be implemented : 
 
+Figma design : https://www.figma.com/file/pnmc2pyAcNWBkhGVf0croR/Rogan-UI-challenge?type=design&node-id=0-1&t=MW83LTVIV9T968c6-0
+
 ### Date fns tasks :  
 
 Updated this min/hour/days ago 
