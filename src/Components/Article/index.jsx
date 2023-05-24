@@ -7,7 +7,12 @@ import ArticleSection from "./ArticleSection";
 import NotFound from "../common/NotFound";
 
 const index = () => {
-  return <SideBar />;
+  return(
+      <div className="flex justify-items-center">
+        <SideBar/>
+        <ArticleSection/>
+      </div>
+  );
 };
 
 export default index;
