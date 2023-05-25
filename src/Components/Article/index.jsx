@@ -7,7 +7,7 @@ import ArticleSection from "./ArticleSection";
 import NotFound from "../common/NotFound";
 
 const index = () => {
-  return <NotFound />;
+  return <SideBar />;
 };
 
 export default index;
