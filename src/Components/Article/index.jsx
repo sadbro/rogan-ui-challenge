@@ -5,6 +5,15 @@ import {Button, Input, Modal} from "antd";
 import { PlusCircleOutlined } from "@ant-design/icons";
 import ArticleSection from "./ArticleSection";
 import NotFound from "../common/NotFound";
+import * as Yup from 'yup';
+
+const coolNameEgg = "How will we find you when you do a crime if you do not put your name";
+const coolDescriptionEgg = "An article becomes useless like you if you don't provide a description";
+
+const articleSchema = Yup.object().shape({
+    name: Yup.string().min(8, "Name must be greater than 8 characters").required(coolNameEgg),
+    description: Yup.string().min(50, "Description must be at least 50 characters").required(coolDescriptionEgg)
+})
 
 const Article = () => {
 
@@ -28,9 +37,9 @@ const Article = () => {
               okText="Add Article"
               okButtonProps={{className: "bg-blue-500"}}
               onOk={() => {
-                  setIsModalVisible(false);
                   setArticle({name: articleName, description: articleDescription, tags: articleTags, createdAt: Date.now().toString()})
-                  alert("Add API logic not implemented yet!");
+                  articleSchema.validate(article).then(() => alert("API logic not implemented yet!")).catch((e) => alert(e.toString()))
+                  setIsModalVisible(false);
               }}
               onCancel={() => {setIsModalVisible(false)}}
           >
